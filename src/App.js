@@ -6,6 +6,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import ToggleColorModeProvider from './ThemeContext';
 import { ColorModeContext } from './ThemeContext';
+import NewCopm from './NewCopm';
 // const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
 	const colorMode = React.useContext(ColorModeContext);
 	return (
 		<ToggleColorModeProvider>
+			<NewCopm />
 			<Box
 				sx={{
 					display: 'flex',
